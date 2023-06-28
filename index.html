@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<style>
+   .T-I {
+      display: none;
+   }
+</style>
+
+<body>
+   <div
+      style="background-color: #000 !important;font-family: 'Helvetica Neue';color: #fff;overflow: hidden; padding-bottom: 2rem;">
+      <div style="display: flex;width:100%;margin: 30px auto">
+         <div style="border-bottom: 1px solid white;width: 50%; height: 20px;margin-right: 25px;"></div>
+         <div><img src=${publicBucketURL}${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.MINT_LOGO_URL_PATH} width="120px"
+               height="40px" /> </div>
+         <div style="border-bottom: 1px solid white;width: 50%;height: 20px;margin-left: 25px;"></div>
+      </div> <img src=${publicBucketURL}${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.BANNER_IMAGE_URL_PATH}
+         style="object-fit: contain;" width="100%" />
+      <div style="width:85%;margin: auto;padding: 32px 0px;">
+         <h1 style="font-weight: 500;font-size: 16px;line-height: 20px;color: #fff;">Hi ${patientName},</h1>
+         <p style="font-size: 16px;line-height: 28px;margin-top: 35px;margin-bottom: 35px;color: #fff;">To verify your
+            email address, please click on the button below. This verification link will remain valid for 24 hours.</p>
+         <a href=${emailVerifyLink}><button
+               style="font-weight: 700; font-size: 16px;line-height: 32px;background: #26A626;height: 64px;width:100%;text-transform: uppercase;color: #fff;border:1px solid #26A626;cursor:pointer">Verify
+               your email address</button></a>
+         <p style="font-size: 16px;line-height: 28px;margin-top: 35px;margin-bottom: 35px;">Thank you!</p>
+         <p style="font-size: 16px;line-height: 28px;margin-top: 35px;margin-bottom: 35px;">Sincerely,<br />MINT
+            dentistry</p>
+      </div>
+      <div style="text-align: center;"><a href=${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.FACEBOOK.LINK}
+            style="margin: auto 0.8%;text-decoration: none;"> <img
+               src=${publicBucketURL}${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.FACEBOOK.IMAGE_URL_PATH} width="50px"
+               height="50px" /></a><a href=${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.INSTAGRAM.LINK}
+            style="margin: auto 0.8%;text-decoration: none;" ;> <img
+               src=${publicBucketURL}${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.INSTAGRAM.IMAGE_URL_PATH} width="50px"
+               height="50px" style="text-decoration: none;" /></a><a
+            href=${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.LINKEDIN.LINK}
+            style="margin: auto 0.8%;text-decoration: none;"><img
+               src=${publicBucketURL}${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.LINKEDIN.IMAGE_URL_PATH} width="50px"
+               height="50px" /></a><a href=${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.TIKTOK.LINK}
+            style="margin: auto 0.8%;text-decoration: none;"><img
+               src=${publicBucketURL}${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.TIKTOK.IMAGE_URL_PATH} width="50px"
+               height="50px" /></a><a href=${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.TWITTER.LINK}
+            style="margin: auto 0.8%;text-decoration: none;"><img
+               src=${publicBucketURL}${Constants.EMAIL_TEMPLATE_LINK_IMAGES_URLS.TWITTER.IMAGE_URL_PATH} width="50px"
+               height="50px" /></a></div>
+   </div>
+</body>
+
+</html>`;
