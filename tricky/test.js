@@ -71,6 +71,121 @@
 //         return function(z){
 //             return x*y*z;
 //         }
-        
+
 //     }
 // }
+
+
+
+// function bar() {
+//      console.log(1); 
+//      setTimeout(() => { console.log(2); }, 0); 
+//      Promise.resolve().then(() => { 
+//         console.log(3); 
+//     }); 
+//     console.log(4); 
+// } 
+// bar(); 
+
+// console.log(a); 
+// var a = 1; 
+// function foo() {
+//     const a = 2; 
+//     console.log(a);
+// } 
+// foo(); 
+// console.log(a); 
+
+
+// function add(x) {
+//     return function(y){
+//         return x+y;
+//     }
+// }
+// const sum= add(2)(4)(3)
+// console.log(sum);
+// // console.log((sum(5)));
+
+// function sum(x) {
+//     if(x===undefined)
+//         return 0;
+//     else {
+//         return function(y){
+//             if(y===undefined)
+//                 return x;
+//             else
+//                 return sum(x+y)
+//         }
+//     }
+
+// }
+
+// console.log(sum(1)(1)(2));
+
+
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   Person.prototype.greet = function() {
+//     console.log('Hello, my name is ' + this.name);
+//   };
+
+//   var john = new Person('John', 30);
+//   john.greet()
+
+// const PersonProto={
+//     greet:function () {
+//         console.log("my name is ",this.name);
+//     }
+// }
+
+// function CreatePerson(name,age) {
+//     // var person = Object.create(personProto);
+//     this.name=name;
+//     this.age=age;
+//     this.greet=function () {
+//                 console.log("my name is ",this.name);
+//             }
+//     return this;
+// }
+
+// CreatePerson("Veeresh",22).greet()
+// CreatePerson.prototype.greet2=function () {
+//     console.log("this is new greet",this.name);
+
+// }
+// console.log(new CreatePerson("veeresh",1).greet2());
+
+// let arr=[11,22,false,true];
+
+// Array.prototype.customMap=function (callback) {
+// const newArray=[];
+// for (let index = 0; index < this.length; index++) {
+//     if(!!callback(this[index],index,this))
+//         newArray.push(this[index])
+// }
+// return newArray;
+// }
+// let cm=arr.customMap(function(item,index,arr){
+//     return !!item;
+// })
+// console.log(cm);
+// console.log("=================");
+// let m=arr.map(function(item,index,arr){
+//     return item;
+// })
+// console.log(m);
+
+
+// let a=[1,2,3,4,5,10]
+// let b=[1,3,6,9,5,8,12,4]
+// const arrayAJson={};
+// const concatArray=a.concat(b);
+// concatArray.forEach(element => { 
+//     arrayAJson[element]=(arrayAJson[element]||0)+1
+// });
+// const result=concatArray.filter((item)=>arrayAJson[item]===1)
+
+// console.log(result);//2,6,8,9,10,12
